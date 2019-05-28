@@ -87,7 +87,7 @@ boolean SCD30::begin(TwoWire &wirePort)
    * have timeout)
    *
    */
-#if defined(ARDUINO_ESP8266_THING) || defined(ARDUINO_ESP8266_GENERIC) || defined(ARDUINO_ESP8266_ESP01) || defined(ARDUINO_ESP8266_ESP13) || defined(ARDUINO_ESP8266_ESP12) || defined(ARDUINO_ESP8266_NODEMCU) || defined(ARDUINO_ESP8266_THING_DEV) || defined (ARDUINO_ESP8266_ESP210) || defined(ARDUINO_MOD_WIFI_ESP8266) || defined(ARDUINO_ESP8266_PHOENIX_V1) || defined(ARDUINO_ESP8266_PHOENIX_V2) || defined(ARDUINO_ESP8266_ARDUINO)
+#if defined(ARDUINO_ESP8266_THING) || defined(ARDUINO_ESP8266_GENERIC) || defined(ARDUINO_ESP8266_ESP01) || defined(ARDUINO_ESP8266_ESP13) || defined(ARDUINO_ESP8266_ESP12) || defined(ARDUINO_ESP8266_NODEMCU) || defined(ARDUINO_ESP8266_THING_DEV) || defined (ARDUINO_ESP8266_ESP210) || defined(ARDUINO_MOD_WIFI_ESP8266) || defined(ARDUINO_ESP8266_PHOENIX_V1) || defined(ARDUINO_ESP8266_PHOENIX_V2) || defined(ARDUINO_ESP8266_ARDUINO) || defined(ARDUINO_ARCH_ESP8266)
 
     if (SCD_DEBUG > 1) printf("setting clock stretching to 200000 (~200ms)\n");
     _i2cPort->setClockStretchLimit(200000);
